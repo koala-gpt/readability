@@ -2206,7 +2206,7 @@ Readability.prototype = {
    * @return boolean indicating whether this is a title-like header.
    */
   _headerDuplicatesTitle: function(node) {
-    if (node.tagName != "H1" && node.tagName != "H2") {
+    if (node.tagName != "H1") {
       return false;
     }
     var heading = this._getInnerText(node, false);
